@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  background: #f7f7f7;
+}
+
+.container {
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.primary {
+  width: 100%;
+  padding: 12px;
+  background: #6c3cf0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.secondary {
+  width: 100%;
+  padding: 12px;
+  background: #dcd3ff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
