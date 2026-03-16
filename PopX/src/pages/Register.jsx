@@ -22,46 +22,60 @@ function Register() {
     };
 
     localStorage.setItem("user", JSON.stringify(user));
-
     navigate("/account");
   };
 
   return (
-    <div className="container">
+    <div className="container register-container">
       <h2>Create your PopX account</h2>
 
-      <input
-        placeholder="Full Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <div className="input-group">
+        <label>Full Name *</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
 
-      <input
-        placeholder="Phone Number"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
-      />
+      <div className="input-group">
+        <label>Phone Number *</label>
+        <input
+          type="text"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+      </div>
 
-      <input
-        placeholder="Email Address"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+      <div className="input-group">
+        <label>Email Address *</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
 
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
+      <div className="input-group">
+        <label>Password *</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
 
-      <input
-        placeholder="Company Name"
-        value={company}
-        onChange={(e) => setCompany(e.target.value)}
-      />
+      <div className="input-group">
+        <label>Company Name</label>
+        <input
+          type="text"
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
 
       <p className="agency-title">Are you an Agency?</p>
+
       <div className="agency-options">
         <label>
           <input
@@ -69,7 +83,7 @@ function Register() {
             name="agency"
             value="Yes"
             onChange={(e) => setAgency(e.target.value)}
-          />{" "}
+          />
           Yes
         </label>
 
@@ -79,7 +93,7 @@ function Register() {
             name="agency"
             value="No"
             onChange={(e) => setAgency(e.target.value)}
-          />{" "}
+          />
           No
         </label>
       </div>

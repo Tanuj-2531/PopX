@@ -13,38 +13,33 @@ function Account() {
   }
 
   return (
-    <div className="container">
-      <h2>Account Settings</h2>
+    <div className="container account-container">
+      {/* Header */}
+      <div className="account-header">
+        <h3>Account Settings</h3>
+      </div>
 
-      <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-        <img
-          src="https://randomuser.me/api/portraits/men/45.jpg"
-          width="80"
-          height="80"
-          style={{ borderRadius: "50%" }}
-        />
+      {/* Profile Section */}
+      <div className="profile-section">
+        <div className="profile-img">
+          <img
+            src="https://randomuser.me/api/portraits/men/45.jpg"
+            alt="profile"
+          />
+          <span className="camera-icon">📷</span>
+        </div>
 
-        <div>
-          <h3>{user.name}</h3>
+        <div className="profile-info">
+          <h4>{user.name}</h4>
           <p>{user.email}</p>
         </div>
       </div>
 
-      <hr style={{ margin: "20px 0" }} />
-
-      <p>
-        <strong>Phone:</strong> {user.phone}
-      </p>
-      <p>
-        <strong>Company:</strong> {user.company}
-      </p>
-      <p>
-        <strong>Agency:</strong> {user.agency}
-      </p>
-
-      <p style={{ marginTop: "20px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+      {/* Description */}
+      <p className="profile-desc">
+        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy
+        Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed
+        Diam.
       </p>
     </div>
   );
